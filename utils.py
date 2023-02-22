@@ -139,6 +139,7 @@ def load_filepaths_and_text(filename, split="|"):
   with open(filename, encoding='utf-8') as f:
     filepaths_and_text = []
     for line in f:
+      if '|' not in line: continue
       path_text = line.strip().split(split)
       filepaths_and_text.append(path_text)
   return filepaths_and_text
