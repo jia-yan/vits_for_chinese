@@ -19,7 +19,7 @@
     "training_files":"filelists/mixed.txt.cleaned",     训练用的文件列表，内部格式(文件名|音素)或(文件名|说话者编号|音素)
     "validation_files":"filelists/mixedv.txt.cleaned",  验证训练效果用的，需要一个不在训练集里的文件，一个就够。内部格式同上
     "max_wav_value": 32768.0, 数据集里的波形数据的最大值
-    "sampling_rate": 22050,   采样率。人耳能听到的声音频率20~20KHz。
+    "sampling_rate": 22050,   采样率。人耳能听到的声音频率20~20KHz。16000
     "filter_length": 1024,    频谱图的最大频率
     "hop_length": 256,        短期时域转频域的滑窗跳动距离
     "win_length": 1024,       短期时域转频域的滑窗大小
